@@ -89,6 +89,9 @@ header{
 .header-scrolled .right-header-items a {
     color: black;
 }
+.header-scrolled .right-header-items a:hover{
+    color: var(--primary-color);
+}
 .hero-section{
     height: 125vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.19)),url(Images/hero1.jpg);
@@ -119,7 +122,8 @@ header{
     font-weight: 500;
     color: white;
 }
-.hero-button{
+.hero-button,
+.about-section-right-button {
     background-color: var(--primary-color);
     color: white;
     padding: 15px 30px;
@@ -128,9 +132,11 @@ header{
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+    margin-top: 30px;
 }
-.hero-button:hover{
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+.hero-button:hover,
+.about-section-right-button:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
 }
 .about-section{
     margin-top: 100px;
@@ -169,6 +175,7 @@ header{
     font-weight: 500;
     color: var(--p-color);
 }
+
 
 
 
