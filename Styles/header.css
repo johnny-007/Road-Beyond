@@ -1,0 +1,91 @@
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.579);
+    transition: all 0.5s ease;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin-left: 5%;
+}
+
+.logo-heading {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.logo-heading a {
+    text-decoration: none;
+    color: white;
+}
+
+.right-header {
+    display: flex;
+    width: 50%;
+    margin-right: 5%;
+}
+
+.right-header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.right-header-items {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.right-header-items a {
+    text-decoration: none;
+    color: white;
+}
+
+.right-header-items a:hover {
+    color: var(--primary-color);
+}
+
+.right-header-items a:active {
+    color: var(--primary-color);
+}
+
+.right-header .right-header-links .right-header-items::after {
+    content: '';
+    height: 4px;
+    width: 0;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -34px;
+    transition: 0.5s;
+}
+
+.right-header .right-header-links .right-header-items:hover::after {
+    width: 100%;
+}
+
+.header-scrolled {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header-scrolled .logo-heading a,
+.header-scrolled .right-header-items a {
+    color: black;
+}
+
+.header-scrolled .right-header-items a:hover {
+    color: var(--primary-color);
+}
