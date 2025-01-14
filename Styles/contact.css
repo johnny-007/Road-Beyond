@@ -1,0 +1,102 @@
+.contact-section{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px;
+    background-color: #F9FAFB;
+}
+.contact-section-form{
+    width: 85%;
+    margin-top: 40px;
+}
+.contact-section-heading{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.contact-section-paragraph{
+    width: 40%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: var(--p-color);
+}
+.contact-section-form-input{
+    width: 540px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 550;
+    color: var(--p-color);
+    padding: 0 25px;
+    margin-top: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 35px;
+    outline: var(--primary-color);
+    background-color: transparent;
+   
+}
+.contact-section-form-input:focus{
+    border: 2px solid var(--primary-color);
+}
+.contact-section-form-input::placeholder{
+    font-size: 16px;
+    font-weight: 550;
+    padding-left: 0;
+    color: var(--p-color);
+}
+.contact-section-form-textarea{
+    width: 99%;
+    font-size: 16px;
+    font-weight: 550;
+    padding-left: 10px;
+    color: var(--p-color);
+    padding: 20px 25px;
+    margin-top: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    background-color: transparent;
+    height: 200px;
+    outline: none;
+}
+.contact-section-form-textarea::placeholder{
+    font-size: 16px;
+    font-weight: 550;
+    padding-left: 0;
+    color: var(--p-color);
+}
+.contact-section-form-textarea:focus{
+    border: 2px solid var(--primary-color);
+    outline: none;
+}   
+.contact-section-form-button{
+    padding: 15px 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 35px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 550;
+    cursor: pointer;
+}
+.contact-section-form-input option {
+    background-color: var(--bg-color);
+    color: var(--p-color);
+    font-weight: 500;
+    cursor: pointer;
+  
+}
+.contact-section-form-input option:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: 600;
+}
+.contact-section-form-input option:checked {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+ 
